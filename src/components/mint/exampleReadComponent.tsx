@@ -11,9 +11,10 @@ export interface IAppProps {
 }
 
 export function ExampleRead (props: IAppProps) {
+  console.log(props)
     const {isConnected, address} = useAccount();
 
-    const { data, isLoading,  refetch,isError }:any = useContractRead({
+    const { data, isLoading,  refetch }:any = useContractRead({
         address: contractInfo.usdt.mainnet.address as `0x${string}`,
         abi: contractInfo.usdt.mainnet.abi,
         functionName:"allowance",

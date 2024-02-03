@@ -11,6 +11,7 @@ export interface IAppProps {
 }
 
 export function ExampleWriteComponent (props: IAppProps) {
+  console.log(props)
     const [val, setVal] = useState("0");
     const { config, error } = usePrepareContractWrite({
         address: contractInfo.testContract.mainnet.address as `0x${string}`,

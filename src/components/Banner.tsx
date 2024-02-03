@@ -1,4 +1,3 @@
-import Hero from './Hero'
 
 function Banner() {
   return (

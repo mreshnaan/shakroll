@@ -1,7 +1,4 @@
-import { CustomCarousel } from "./Slider"
-const sliders: [] = [
 
-]
 function FeatureBox({ title, subTitle, content, className }: { title: string, subTitle?: string, content: string, className?: string }) {
     return (
         <div className={`w-[270px] xl:w-[338px] flex flex-col items-center gap-5 ${className}`}>
