@@ -5,7 +5,13 @@ import { CustomCarousel } from "./Slider"
 
 function Section2() {
     return (
-        <div className='flex flex-col items-center p-28 gap-[100px] bg-[#00113d]'>
+        <div className='relative flex flex-col items-center pt-10 px-20 gap-10 lg:p-28 lg:gap-[100px] '>
+
+            {/* Gradient color overlay */}
+            <img className="absolute top-0 left-0  bg-no-repeat z-[-1] lg:h-[1500px] lg:w-[1500px] " src="/assets/ellipse1.png" />
+            <img className=" hidden absolute lg:block lg:top-[920px] right-0   bg-no-repeat z-[-1] lg:h-[2500px] lg:w-[1500px] " src="/assets/ellipse2.svg" />
+            <img className=" absolute lg:hidden top-[1420px] h-[1500px] w-[1500px] right-0 z-[-1]" src="/assets/mobileEllipse2.svg" />
+
             <h1 className=' flex flex-col items-center text-[40px] leading-[44px] text-center font-bold  headline-gradient-2 xl:text-[70px] xl:leading-[77px]'>Benefits of Buying $SKR <span>Token During Presale</span></h1>
 
             <div className='flex flex-col items-center gap-[50px]'>
@@ -48,7 +54,7 @@ function Section2() {
                         />
 
                     ]} classNames="xl:hidden w-[330px]" />
-                    
+
                     <DetailBox
                         className={"hidden xl:block"}
                         title="Strategic Buybacks"
@@ -74,7 +80,8 @@ function Section2() {
                 {/* divider */}
                 <Divider className="hidden xl:block" />
 
-                <img src="/assets/graph.png" alt="" srcSet="" className=" w-[500px] h-[300px] xl:h-[687px] xl:w-[1148px]" />
+                <img src="/assets/graph.png" alt="" srcSet="" className=" hidden lg:block xl:h-[687px] xl:w-[1148px]" />
+                <img src="/assets/mobileGraph.png" alt="" srcSet="" className=" h-full w-full lg:hidden" />
 
                 <button className=" text-[#FFF] w-[335px] h-[100px] rounded-[300px] px-[14px] text-[20px] leading-[22px] button-gradient-1 xl:px-[296px] xl:py-[36px]   xl:w-[1441px] xl:h-[150px]  xl:text-[35px]  xl:leading-[38px]">
                     <span className="font-bold">Join the presale</span>  and cement your status as a pioneer

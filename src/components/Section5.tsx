@@ -3,7 +3,7 @@ import StatsDetail from "./StatsDetail"
 
 function Section5() {
     return (
-        <div className='flex flex-col items-center px-16 gap-5 bg-[#00113d] '>
+        <div className='flex flex-col items-center px-16 gap-5 '>
             <h1 className=' flex flex-col items-center text-[40px] leading-[44px] font-bold headline-gradient-2 xl:text-[70px] xl:leading-[77px]'>Tokenomics</h1>
             <p className="text-[#FFF] text-center text-[17px] leading-[25.5px] tracking-[0.51px] mb-[50px] xl:text-[24px]  xl:leading-[36px] xl:tracking-[0.72px] xl:mb-[100px]">Join our Revenue Ladder: Every referral you make enhances your stature in the ecosystem.</p>
 

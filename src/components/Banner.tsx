@@ -2,7 +2,7 @@ import Hero from './Hero'
 
 function Banner() {
   return (
-    <div className='bg-[#00113d] h-fit w-full pt-96 pb-10 grid grid-cols-1 mt-[-64px] xl:grid-cols-2 gap-14  xl:h-screen xl:py-0'>
+    <div className='bg-[url("/assets/mobileBannerBg.png")]  lg:bg-[url("/assets/bannerBg.png")] bg-center bg-no-repeat bg-cover h-fit w-full pt-[550px] pb-10 grid grid-cols-1 mt-[-64px] xl:grid-cols-2 gap-14  xl:h-screen xl:py-0'>
       <div className='flex justify-center items-center p-8'>
         <div className='flex flex-col items-center justify-center xl:block w-[335px] xl:w-[468px]'>
           <img src="/assets/logo.svg" className='w-[217px] h-[65.758px] xl:w-[373px] xl:h-[114px]' alt="" />
@@ -15,9 +15,9 @@ function Banner() {
           <button className='button-gradient-1  py-3 px-8 rounded-[6px] text-[#FFF] text-[19px] leading-7 uppercase mt-7'>JOIN COMMUNITY</button>
         </div>
       </div>
-      <div className='flex justify-center items-center'>
+      {/* <div className='flex justify-center items-center'>
         <Hero />
-      </div>
+      </div> */}
 
     </div>
   )
