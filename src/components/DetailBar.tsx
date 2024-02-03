@@ -1,7 +1,7 @@
 
 function DetailBar({ title, content }: { title: string, content: string }) {
     return (
-        <div className='flex flex-col justify-center items-center w-[300px] h-[298px] gap-6 rounded-[16px] px-6 detail-bar-1 xl:rounded-[300px] xl:h-[136px]  xl:w-[1440px]  xl:flex-row '>
+        <div className='flex flex-col justify-center items-center w-[300px] h-[298px] gap-6 rounded-[16px] px-6 detail-bar-1 xl:rounded-[300px] xl:h-[136px]  xl:w-[1440px]  xl:flex-row border-none '>
             <div className='flex flex-col items-center justify-center gap-4  xl:flex-row  xl:gap-[20px] xl:mr-[100px]'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 44 39" fill="none">
                     <path d="M9.30769 0L18.4618 25.69L0 39L24.75 34.5L44 39L9.30769 0Z" fill="#69EAFF" />

@@ -26,11 +26,17 @@ function Section2() {
                     content="The early shark catches the best deals. $SKR tokens are available at their lowest price during the presale,
                         offering unparalleled value that won't be seen again."
                 />
-                <DetailBar
-                    title="Buy Back & Burn"
-                    content="In the Sharkroll ecosystem, $SKR tokens are your key to unlocking a world of essential and substantial
+                <div className="flex items-center flex-col justify-center border-none">
+                    <DetailBar
+                        title="Buy Back & Burn"
+                        content="In the Sharkroll ecosystem, $SKR tokens are your key to unlocking a world of essential and substantial
                         rewards. Here's a distilled look at how your investment can grow and flourish:"
-                />
+                    />
+                    <div className="w-0 h-0  border-l-[40px] border-l-transparent  border-t-[30px] border-t-[#012c9a]  border-r-[40px] border-r-transparent">
+                    </div>
+                </div>
+
+
                 {/* details bars  end*/}
 
                 <div className='flex justify-center gap-[80px]'>
