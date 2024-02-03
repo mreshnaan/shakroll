@@ -40,6 +40,7 @@ function Section3() {
 
                 </div>
 
+
                 <div className="flex flex-col gap-5 w-full xl:w-[537px]">
                     <div className="flex items-center gap-4 xl:gap-7">
                         <svg className="w-[19px] h-[17px] xl:w-[24px] xl:h-[21px]" xmlns="http://www.w3.org/2000/svg" width="24" height="21" viewBox="0 0 24 21" fill="none">
