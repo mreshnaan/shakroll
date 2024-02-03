@@ -6,7 +6,7 @@ function Section9() {
         <div className='flex flex-col items-center px-16 py-[50px] gap-5 bg-[] xl:py-[100px] xl:pb-28'>
             <h1 className=' flex flex-col items-center text-[40px] leading-[44px] text-center xl:text-[70px] font-bold xl:leading-[77px] headline-gradient-2'>Frequently Asked Questions</h1>
 
-            <img src="/assets/Group-513.svg" alt="" srcSet="" className="hidden xl:block xl:mb-[100px] xl:w-[739px] xl:h-[92px]" />
+            <img src="/assets/Group-513.svg" alt="" srcSet="" className="hidden xl:block xl:mb-[100px] xl:w-[739px] xl:h-[92px]" loading="lazy" />
 
 
             <div className="flex flex-col gap-[40px] w-[330px] xl:w-[1330px]">

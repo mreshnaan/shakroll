@@ -6,10 +6,10 @@ function Section8() {
             <h1 className=' flex flex-col items-center text-[40px] leading-[44px] text-center xl:text-[150px] font-bold xl:leading-[165px] headline-gradient-2'>Roadmap</h1>
             <img className="hidden absolute lg:block lg:top-[350px] lg:left-0  bg-no-repeat z-[-1] lg:h-[2500px] lg:w-[1500px] " src="/assets/ellipse4.svg" />
 
-            <img src="/assets/Group-513.svg" alt="" srcSet="" className="w-[334px] h-[42px] mb-[50px] xl:mb-[100px] xl:w-[739px] xl:h-[92px]" />
+            <img src="/assets/Group-513.svg" alt="" srcSet="" className="w-[334px] h-[42px] mb-[50px] xl:mb-[100px] xl:w-[739px] xl:h-[92px]" loading="lazy" />
 
             <div className="flex flex-col items-center w-330px gap-[50px] xl:gap-[100px] xl:w-[1330px]">
-                <img src="/assets/roadMap.png" className="object-contain" alt="" srcSet="" />
+                <img src="/assets/roadMap.png" className="object-contain" alt="" srcSet="" loading="lazy" />
                 <Divider />
                 <div className="flex flex-col justify-center items-center gap-16 xl:flex-row xl:gap-52 ">
                     <h1 className="flex flex-col text-[40px]  leading-[44px] text-center xl:text-left xl:text-[70px] text-[#FFF] xl:leading-[77px] xl:w-[434px]">Stay Ahead of the Tide:

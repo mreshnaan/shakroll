@@ -9,7 +9,7 @@ function Section5() {
 
             <div className="flex flex-col items-center justify-center gap-[50px] mb-[50px] xl:gap-[100px] xl:flex-row  xl:mb-[100px]">
 
-                <img src="/assets/circle-chart.svg" alt="" srcSet="" className="h-[335px] w-[335px] xl:h-[668px] xl:w-[668px]" />
+                <img src="/assets/circle-chart.svg" alt="" srcSet="" className="h-[335px] w-[335px] xl:h-[668px] xl:w-[668px]" loading="lazy" />
 
                 <div className="flex flex-col items-center w-[350px] gap-12 xl:items-start xl:w-[518px]">
                     <div className="flex flex-col">

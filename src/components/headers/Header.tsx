@@ -58,7 +58,7 @@ export default function Header() {
                     <>
                       <img
                         className="h-8 w-8"
-                        src="/assets/mobile-logo-menu.svg"
+                        src="/assets/mobile-logo-menu-close.svg"
                         alt="Your Company"
                       />
 
@@ -76,7 +76,9 @@ export default function Header() {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="lg:hidden h-screen w-screen relative">
+          <img className=" absolute lg:hidden top-[0px] h-screen w-screen right-0 z-[-1]" src="/assets/ellipse5.svg"  loading='lazy'/>
+
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
                 <Disclosure.Button

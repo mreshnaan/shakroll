@@ -7,7 +7,7 @@ import { CustomCarousel } from "./Slider"
 
 function Section3() {
     return (
-        <div className='relative flex flex-col items-center py-14 xl:py-28 bg-[url("/assets/")] lg:pl-64 lg:pr-0 xl:px-28'>
+        <div className='relative flex flex-col items-center py-14 xl:py-28 bg-[url("/assets/")] lg:pr-0 xl:px-28'>
             {/* gradient images  */}
             <img className="hidden absolute lg:block lg:top-[1350px] lg:right-0  bg-no-repeat z-[-1] lg:h-[2500px] lg:w-[1500px] " src="/assets/shark1.svg" />
             <img className="lg:hidden absolute top-[1280px] right-0  bg-no-repeat z-[-1] h-[1500px] w-[1500px] " src="/assets/mobileShark1.svg" />
@@ -20,8 +20,8 @@ function Section3() {
 
             <p className="text-[#FFF] text-[17px] leading-[25.5px]  tracking-[0.51px] px-28 text-center mb-[50px] xl:mb-[100px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px]">Uncover the Elements of Our Oceanic Empire</p>
 
-            <div className="flex flex-col w-full gap-y-40 mb-[40px] xl:mb-[60px] px-20  lg:flex-row lg:justify-between lg:w-[1350px] ">
-      
+            <div className="flex flex-col w-full gap-y-40 mb-[40px] xl:mb-[60px] px-20  lg:flex-row lg:justify-between xl:w-[1330px] ">
+
                 <div className="flex flex-col gap-4 w-full xl:w-[537px] xl:gap-7">
                     <div className="flex items-center gap-4 xl:gap-7">
                         <svg className="w-[22px] h-[22px] xl:w-[31px] xl:h-[31px]" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
@@ -67,8 +67,7 @@ function Section3() {
 
             </div>
 
-
-            <div className="lg:w-[1350px]">
+            <div className="px-20 lg:px-40 w-full">
                 <DynamicAccordion
                     items={AccordingItems}
                 />
