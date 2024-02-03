@@ -31,7 +31,7 @@ export default function Header() {
                 </div>
 
               </div>
-              <div className="hidden sm:ml-6 sm:block">
+              <div className="hidden sm:ml-6 lg:block">
                 <div className="flex space-x-4">
                   {navigation.map((item) => (
                     <a
@@ -49,7 +49,7 @@ export default function Header() {
                 </div>
               </div>
 
-              <div className="-mr-2 flex sm:hidden">
+              <div className="-mr-2 flex lg:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                   <span className="absolute -inset-0.5" />
