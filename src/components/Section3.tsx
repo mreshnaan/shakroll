@@ -20,7 +20,8 @@ function Section3() {
 
             <p className="text-[#FFF] text-[17px] leading-[25.5px]  tracking-[0.51px] px-28 text-center mb-[50px] xl:mb-[100px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px]">Uncover the Elements of Our Oceanic Empire</p>
 
-            <div className="flex flex-col w-full gap-y-40 mb-[40px] xl:mb-[60px] px-12  lg:flex-row lg:justify-between lg:w-[1350px] ">
+            <div className="flex flex-col w-full gap-y-40 mb-[40px] xl:mb-[60px] px-20  lg:flex-row lg:justify-between lg:w-[1350px] ">
+      
                 <div className="flex flex-col gap-4 w-full xl:w-[537px] xl:gap-7">
                     <div className="flex items-center gap-4 xl:gap-7">
                         <svg className="w-[22px] h-[22px] xl:w-[31px] xl:h-[31px]" xmlns="http://www.w3.org/2000/svg" width="31" height="31" viewBox="0 0 31 31" fill="none">
@@ -65,6 +66,8 @@ function Section3() {
 
 
             </div>
+
+
             <div className="lg:w-[1350px]">
                 <DynamicAccordion
                     items={AccordingItems}
