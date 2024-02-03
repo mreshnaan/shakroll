@@ -5,7 +5,7 @@ import { CustomCarousel } from "./Slider"
 
 function Section2() {
     return (
-        <div className='relative flex flex-col items-center pt-10 px-20 gap-10 lg:p-28 lg:gap-[100px] '>
+        <div className='relative flex flex-col items-center pt-10 px-5 gap-10 lg:p-28 lg:gap-[100px] '>
 
             {/* Gradient color overlay */}
             <img className="absolute top-0 left-0  bg-no-repeat z-[-1] lg:h-[1500px] lg:w-[1500px] " src="/assets/ellipse1.png" />

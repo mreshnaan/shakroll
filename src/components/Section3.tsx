@@ -10,7 +10,7 @@ function Section3() {
         <div className='relative flex flex-col items-center py-14 xl:py-28 bg-[url("/assets/")] lg:pr-0 xl:px-28'>
             {/* gradient images  */}
             <img className="hidden absolute lg:block lg:top-[1350px] lg:right-0  bg-no-repeat z-[-1] lg:h-[2500px] lg:w-[1500px] " src="/assets/shark1.svg" />
-            <img className="lg:hidden absolute top-[1280px] right-0  bg-no-repeat z-[-1] h-[1500px] w-[1500px] " src="/assets/mobileShark1.svg" />
+            <img className="lg:hidden absolute top-[1335px] right-0  bg-no-repeat z-[-1] h-[1500px] w-[1500px] " src="/assets/mobileShark1.svg" />
             <img className=" hidden lg:block absolute top-[2720px] lg:left-0  bg-no-repeat z-[-1] h-[2500px] w-[1200px] " src="/assets/shark2.svg" />
             <img className=" hidden lg:block absolute top-[4220px] lg:right-10  bg-no-repeat z-[-1] h-[300px] w-[300px] " src="/assets/vapali6.svg" />
 
@@ -20,7 +20,7 @@ function Section3() {
 
             <p className="text-[#FFF] text-[17px] leading-[25.5px]  tracking-[0.51px] px-28 text-center mb-[50px] xl:mb-[100px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px]">Uncover the Elements of Our Oceanic Empire</p>
 
-            <div className="flex flex-col w-full gap-y-40 mb-[40px] xl:mb-[60px] px-20  lg:flex-row lg:justify-between xl:w-[1330px] ">
+            <div className="flex flex-col w-full gap-y-40 mb-[40px] xl:mb-[60px] px-12  lg:flex-row lg:justify-between xl:w-[1330px] ">
 
                 <div className="flex flex-col gap-4 w-full xl:w-[537px] xl:gap-7">
                     <div className="flex items-center gap-4 xl:gap-7">
@@ -68,7 +68,7 @@ function Section3() {
 
             </div>
 
-            <div className="px-20 lg:px-40 w-full">
+            <div className="px-2 lg:px-40 w-full">
                 <DynamicAccordion
                     items={AccordingItems}
                 />
