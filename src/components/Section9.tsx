@@ -9,7 +9,7 @@ function Section9() {
             <img src="/assets/Group-513.svg" alt="" srcSet="" className="hidden xl:block xl:mb-[100px] xl:w-[739px] xl:h-[92px]" loading="lazy" />
 
 
-            <div className="flex flex-col gap-[40px] w-[330px] xl:w-[1330px]">
+            <div className="flex flex-col gap-[40px] w-[330px] xl:w-[1250px] 2xl:w-[1330px]">
                 <h1 className=' flex flex-col text-[20px] xl:text-[35px] xl:leading-[35px] font-bold  headline-gradient-3'>General Questions</h1>
                 <DynamicAccordion
                        titleClassName="text-[14px] xl:text-[20px] font-medium"

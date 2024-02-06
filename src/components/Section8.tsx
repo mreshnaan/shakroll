@@ -8,14 +8,14 @@ function Section8() {
 
             <img src="/assets/Group-513.svg" alt="" srcSet="" className="w-[334px] h-[42px] mb-[50px] xl:mb-[100px] xl:w-[739px] xl:h-[92px]" loading="lazy" />
 
-            <div className="flex flex-col items-center w-330px gap-[50px] xl:gap-[100px] xl:w-[1330px]">
+            <div className="flex flex-col items-center w-330px gap-[50px] xl:gap-[100px] xl:w-[1250px] 2xl:w-[1330px]">
                 <img src="/assets/roadMap.png" className="object-contain" alt="" srcSet="" loading="lazy" />
                 <Divider />
                 <div className="flex flex-col justify-center items-center gap-16 xl:flex-row xl:gap-52 ">
                     <h1 className="flex flex-col text-[40px]  leading-[44px] text-center xl:text-left xl:text-[70px] text-[#FFF] xl:leading-[77px] xl:w-[434px]">Stay Ahead of the Tide:
                         <span className="text-[#69EAFF]">Subscribe Now!</span>
                     </h1>
-                    <div className=" flex flex-col items-center gap-4 text-[#FFF] w-[334px] xl:w-[675px] xl:items-start">
+                    <div className=" flex flex-col items-center gap-4 text-[#FFF] w-[334px] xl:w-[550px] 2xl:w-[675px] xl:items-start">
                         <h1 className="flex flex-col text-[20px] text-center leading-[26px] xl:text-[35px] xl:leading-[45.5px] xl:text-left">
                             Don't miss a wave of excitement
                             <span>in the Sharkroll seas!</span>
@@ -30,7 +30,7 @@ function Section8() {
                         </button>
                     </div>
                 </div>
-                <Divider />
+                <Divider className="lg:hidden" />
 
             </div>
 

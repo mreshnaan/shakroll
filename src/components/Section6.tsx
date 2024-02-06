@@ -6,7 +6,7 @@ function Section6() {
             <h1 className=' flex flex-col items-center text-[40px] leading-[44px] font-bold  headline-gradient-2 xl:text-[70px] xl:leading-[77px]'>Digital Dice</h1>
             <p className="text-[#FFF] text-[17px] leading-[25.5px] tracking-[0.5px] mb-[50px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px] xl:mb-[100px]">The Meteoric Rise of Crypto Casinos</p>
 
-            <div className="flex flex-col items-center gap-[50px] w-[350px] xl:gap-[100px] xl:w-[1330px]">
+            <div className="flex flex-col items-center gap-[50px] w-[350px] xl:gap-[100px] xl:w-[1250px] 2xl:w-[1330px]">
                 <p className="flex flex-col text-[#FFF] text-[14px] font-light leading-[18.2px] gap-3 xl:text-[20px] xl:leading-[26px] ">
                     <span>The global casino market, now worth a colossal <span className="font-bold">$263.3 billion</span>, is riding the digital wave with cryptocurrency users doubling in 2021, boasting a <span className="font-bold">178%increase</span>. Gambling-related cryptocurrencies hold a significant pot of over $150 million, with crypto bets in the first half of 2022 seeing a notable uptick of 2.2 times.</span>
 

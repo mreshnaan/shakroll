@@ -16,11 +16,11 @@ function Section3() {
 
             <img className=" lg:hidden absolute top-[2620px] left-0  bg-no-repeat z-[-1] h-[1500px] w-[1500px]" src="/assets/mobileShark2.svg" />
 
-            <h1 className=' flex flex-col items-center text-[40px] leading-[44px] font-bold headline-gradient-2 text-center mb-5 xl:text-[120px] xl:leading-[132px] xl:mb-[30px] xl:text-left'>Dive into the Depths <span>of Sharkroll </span></h1>
+            <h1 className=' flex flex-col items-center text-[40px] leading-[44px] font-bold headline-gradient-2 text-center mb-5 xl:text-[120px] xl:leading-[132px] xl:mb-[30px] xl:text-center 2xl:text-left'>Dive into the Depths <span>of Sharkroll </span></h1>
 
             <p className="text-[#FFF] text-[17px] leading-[25.5px]  tracking-[0.51px] px-28 text-center mb-[50px] xl:mb-[100px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px]">Uncover the Elements of Our Oceanic Empire</p>
 
-            <div className="flex flex-col w-full gap-y-40 mb-[40px] xl:mb-[60px] px-12  lg:flex-row lg:justify-between xl:w-[1330px] ">
+            <div className="flex flex-col w-full gap-y-40 mb-[40px] xl:mb-[60px] px-12  lg:flex-row lg:justify-between xl:w-[1250px] 2xl:w-[1330px] ">
 
                 <div className="flex flex-col gap-4 w-full xl:w-[537px] xl:gap-7">
                     <div className="flex items-center gap-4 xl:gap-7">
@@ -68,7 +68,7 @@ function Section3() {
 
             </div>
 
-            <div className="px-2 lg:px-40 w-full">
+            <div className="px-2  2xl:px-40 w-full">
                 <DynamicAccordion
                     items={AccordingItems}
                 />
@@ -110,7 +110,7 @@ function Section3() {
                     {/* details bars  end*/}
                 </div>
 
-                <div className="flex flex-col gap-[50px] items-center mb-[50px] xl:mb-[100px] xl:gap-[100px]">
+                <div className="flex flex-col gap-[50px] items-center mb-[50px] xl:mb-[100px] xl:gap-[100px] xl:w-[1250px] 2xl:w-[1440px]">
                     <h1 className=' flex flex-col items-center font-bold headline-gradient-1 text-[40px] leading-[44px] xl:leading-[77px] xl:text-[70px]'>
                         Features
                     </h1>

@@ -11,11 +11,11 @@ function Section7() {
                 <p className="text-[#FFF] text-[17px] leading-[25.5px] tracking-[0.5] mb-[50px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px] xl:mb-[100px]">The Meteoric Rise of Crypto Casinos</p>
 
                 <div className="flex flex-col items-center gap-0 xl:gap-[100px]">
-                    <p className="flex flex-col text-[#FFF] text-[14px] w-[335px] gap-3 font-light text-center xl:leading-[26px] xl:text-[20px] xl:w-[1330px]">
+                    <p className="flex flex-col text-[#FFF] text-[14px] w-[335px] gap-3 font-light text-center xl:leading-[26px] xl:text-[20px] xl:w-[1250px] 2xl:w-[1330px]">
                         Sharkroll stands out in the gaming ocean with its user-friendly and smooth platform, allowing for seamless gameplay. Our robust marketing efforts are
                         quickly making us a recognized name in online gaming. Dive into a world where your gaming experience is enhanced by:
                     </p>
-                    <div className="flex flex-col  xl:flex-row gap-5 mb-[150px] xl:mb-[300px]">
+                    <div className="flex flex-col  xl:flex-row gap-5 mb-[150px] xl:mb-[300px] xl:w-[1250px] 2xl:w-[1330px]">
 
                         <ContentWithBorder content="Our innovative investment and rewarding model" />
                         <ContentWithBorder content="Implemented Buy Back & Burn Mechanism" />
@@ -34,8 +34,8 @@ function Section7() {
                 <h1 className=' flex flex-col items-center text-[40px] leading-[44px] text-center w-[283px] font-bold headline-gradient-2 xl:w-[807px] xl:text-[70px] xl:leading-[77px]'>Catch the Crypto Casino
                     <span>Wave Now</span> </h1>
                 <p className="text-[#FFF] text-[17px] leading-[25.5px] tracking-[0.5px] mb-[50px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px] xl:mb-[100px]">The Meteoric Rise of Crypto Casinos</p>
-                <div className="flex flex-col gap-[23px] xl:gap-[46px] items-center w-[335px] xl:w-[1330px]">
-                    <div className="flex flex-col gap-5 w-[335px] xl:w-[1330px]">
+                <div className="flex flex-col gap-[23px] xl:gap-[46px] items-center w-[335px] xl:w-[1250px] 2xl:w-[1330px]">
+                    <div className="flex flex-col gap-5 w-[335px] xl:w-[1250px] 2xl:w-[1330px]">
                         <p className="text-[#FFF] text-center font-bold text-[14px] leading-[18.2px] xl:text-[24px] xl:leading-[31px] ">
                             As the global online casino market surges from <span className="text-[#69EAFF]">$95.1 billion in 2023</span> to an anticipated <span className="text-[#69EAFF]">$131.9 billion by 2027</span>, the time to join the crypto casino revolution is now.
                         </p>

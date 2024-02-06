@@ -2,7 +2,7 @@
 function DetailBox({ title, contentTitle, content, icon, className }: { title: string, contentTitle: string, content: string, icon?: React.ReactNode, className?: string }) {
     return (
         <div className={className}>
-            <div className={`bg-[url("/assets/mobile-rectangle.svg")]  xl:bg-[url("/assets/rectangle.svg")] bg-no-repeat flex flex-col items-center p-8 w-[298px] xl:w-[418px] gap-8`}>
+            <div className={`bg-[url("/assets/mobile-rectangle.svg")]  xl:bg-[url("/assets/rectangle.svg")] bg-no-repeat flex flex-col items-center p-8 w-[298px] xl:w-[318px] xl:bg-contain 2xl:w-[418px] gap-8`}>
                 <h1 className='text-[24px] font-bold leading-[36px] text-[#FFF] flex flex-col justify-center items-center xl:flex-row gap-5'>
                     {
                         icon ?
@@ -14,7 +14,7 @@ function DetailBox({ title, contentTitle, content, icon, className }: { title: s
 
                     {title}
                 </h1>
-                <p className='flex flex-col text-[#FFF] text-[14px] leading-[21px] xl:text-[20px] xl:leading-[30px] text-center '>
+                <p className='flex flex-col text-[#FFF] text-[14px] leading-[21px] xl:text-[18px] xl:leading-[28px] 2xl:text-[20px] 2xl:leading-[30px] text-center '>
                     <span className='text-[#69EAFF] font-bold'>{contentTitle} :</span>
                     {content}
                 </p>

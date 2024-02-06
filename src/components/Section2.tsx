@@ -89,7 +89,7 @@ function Section2() {
                 <img src="/assets/graph.png" alt="" srcSet="" className=" hidden lg:block xl:h-[687px] xl:w-[1148px]" loading="lazy" />
                 <img src="/assets/mobileGraph.png" alt="" srcSet="" className=" h-full w-full lg:hidden" loading="lazy" />
 
-                <button className=" text-[#FFF] w-[335px] h-[100px] rounded-[300px] px-[14px] text-[20px] leading-[22px] button-gradient-1 xl:px-[296px] xl:py-[36px]   xl:w-[1441px] xl:h-[150px]  xl:text-[35px]  xl:leading-[38px]">
+                <button className=" text-[#FFF] w-[335px] h-[100px] rounded-[300px] px-[14px] text-[20px] leading-[22px] button-gradient-1 xl:px-[296px] xl:py-[36px]   xl:w-[1250px] 2xl:w-[1440px]  xl:h-[150px]  xl:text-[35px]  xl:leading-[38px]">
                     <span className="font-bold">Join the presale</span>  and cement your status as a pioneer
                     in the $SKR ecosystem.
                 </button>
