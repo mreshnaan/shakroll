@@ -9,11 +9,11 @@ interface TimelineStepProps {
 
 const TimelineStep: React.FC<TimelineStepProps> = ({ actionLabels }) => {
   return (
-    <div className="flex items-center mb-4">
+    <div className="flex items-center mb-2 md:mb-4">
       <div>
         <div className="flex flex-wrap">
           {actionLabels.map((label, index) => (
-            <div className="px-2 py-2" key={index}>
+            <div className="px-1 py-1 md:2" key={index}>
               <DetailsButton label={label} />
             </div>
           ))}
@@ -33,7 +33,7 @@ const Timeline: React.FC = () => {
   };
 
   return (
-    <div className="">
+    <div className="hidden lg:flex">
       <div className="flex grid grid-cols-8">
         <div className="grid space-y-0 justify-items-end">
           {steps.map((step, index) => (
@@ -103,4 +103,4 @@ const Timeline: React.FC = () => {
   );
 };
 
-export default Timeline;
+export  {TimelineStep,Timeline};

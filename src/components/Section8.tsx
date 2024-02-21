@@ -1,5 +1,6 @@
 import Divider from "./Divider"
-import Timeline from "./roadMap/RoadMap"
+import {Timeline} from "./roadMap/RoadMap"
+import TimelineTest from "./roadMap/RoadMapTest"
 
 
 
@@ -13,6 +14,7 @@ function Section8() {
 
             <div className="flex flex-col items-center w-330px gap-[50px] xl:gap-[100px] xl:w-[1250px] 2xl:w-[1330px]">
                 <Timeline/>
+                <TimelineTest/>
                 <Divider />
                 <div className="flex flex-col items-center justify-center gap-16 xl:flex-row xl:gap-52 ">
                     <h1 className="flex flex-col text-[40px]  leading-[44px] text-center xl:text-left xl:text-[70px] text-[#FFF] xl:leading-[77px] xl:w-[434px]">Stay Ahead of the Tide:
