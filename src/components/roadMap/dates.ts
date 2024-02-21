@@ -1,19 +1,20 @@
 interface TimelineStepProps {
+    id:number;
     date: string;
     actionLabels: string[]; 
   }
 export const steps: TimelineStepProps[] = [
     {
+      id:1,
       date: '2024 Q1',
       actionLabels: ['Website Development Start', 
       '$SKR Token Contract Development', 
       'Development of Dragon Tower',
-      'Development of Dragon Tower',
       'Development of Scratch Card',
       'Development of Spin Wheel',
       'Development of Limbo',
-      'Start Casino Development',
-      'Start Sportsbook Development',
+      'Start of Casino Development',
+      'Start of Sportsbook Development',
       'Start of NFT Marketplace',
       'Development',
       'Curacao License and Company Setup',
@@ -25,11 +26,12 @@ export const steps: TimelineStepProps[] = [
     ],
     },
     {
+      id:2,
       date: '2024 Q2',
       actionLabels: [
       'Development of Slide',
       'Development of Hilo',
-      'Start the Futures Trading Development',
+      'Start of Futures Trading Development',
       'Shark NFT Private Sale',
       'Development of  Prediction games',
       'Development of Tournaments and Challenges',
@@ -45,6 +47,7 @@ export const steps: TimelineStepProps[] = [
     ],
     },
     {
+      id:3,
         date: '2024 Q3',
         actionLabels: [
         'Launch of Lucky Loot Day',
@@ -62,6 +65,7 @@ export const steps: TimelineStepProps[] = [
       ],
       },
       {
+        id:4,
         date: '2024 Q4',
         actionLabels: [
           'New Prediction games (Forex and Crypto)',
@@ -76,6 +80,7 @@ export const steps: TimelineStepProps[] = [
         ],
       },
       {
+        id:5,
         date: '2025',
         actionLabels: [
           'Virtual Reality Casino Experiences',

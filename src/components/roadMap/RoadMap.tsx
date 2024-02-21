@@ -13,7 +13,7 @@ const TimelineStep: React.FC<TimelineStepProps> = ({ actionLabels }) => {
       <div>
         <div className="flex flex-wrap">
           {actionLabels.map((label, index) => (
-            <div className="px-1 py-1 md:2" key={index}>
+            <div className="px-1 py-1 md:px-2 md:py-2" key={index}>
               <DetailsButton label={label} />
             </div>
           ))}
@@ -84,7 +84,7 @@ const Timeline: React.FC = () => {
             </div>
           ))}
           <div className="absolute h-full py-10">
-            <div className="w-0.5 bg-opacity-20 bg-gray-700 h-full">
+            <div className="w-0.5 bg-opacity-40 bg-gray-700 h-full">
               <div
                 className="w-full bg-gray-400"
                 style={{ height: `${progress}%` }}
