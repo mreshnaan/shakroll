@@ -39,7 +39,7 @@ export function CustomCarousel({ sliders, classNames }: { sliders: any, classNam
                     </CarouselItem>
                 ))}
             </CarouselContent>
-            <div className="flex items-center justify-center  w-full">
+            <div className="flex items-center justify-center mt-5  w-full">
                 <Button variant={"ghost"} className="hover:bg-transparent" onClick={prevSlide} disabled={current === 0} >
                     <ArrowLeft size={35} color={current === 0 ? "gray" : "white"} />
                 </Button>

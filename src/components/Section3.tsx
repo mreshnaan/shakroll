@@ -14,7 +14,7 @@ function Section3() {
             <img className=" hidden lg:block absolute top-[2720px] lg:left-0  bg-no-repeat z-[-1] h-[2500px] w-[1200px] " src="/assets/shark2.svg" />
             <img className=" hidden lg:block absolute top-[4220px] lg:right-10  bg-no-repeat z-[-1] h-[300px] w-[300px] " src="/assets/vapali6.svg" />
 
-            <img className=" lg:hidden absolute top-[2620px] left-0  bg-no-repeat z-[-1] h-[1500px] w-[1500px]" src="/assets/mobileShark2.svg" />
+            <img className=" lg:hidden absolute top-[3100px] left-0  bg-no-repeat z-[-1] h-[1500px] w-[1500px]" src="/assets/mobileShark2.svg" />
 
             <h1 className='hidden xl:flex flex-col items-center text-[40px] leading-[44px] font-bold headline-gradient-2 text-center mb-5 xl:text-[120px] xl:leading-[132px] xl:mb-[30px] xl:text-center 2xl:text-left'>Dive into the Depths <span>of Sharkroll </span></h1>
             <h1 className='xl:hidden flex flex-col items-center text-[40px] leading-[44px] font-bold headline-gradient-2 text-center mb-5 xl:text-[120px] xl:leading-[132px] xl:mb-[30px] xl:text-center 2xl:text-left'>Dive into the  <span>Depths of</span>Sharkroll</h1>
@@ -69,17 +69,17 @@ function Section3() {
 
             </div>
 
-            <div className="px-2  2xl:px-40 w-full">
+            <div className="px-6  2xl:px-40 w-full">
                 <DynamicAccordion
                     items={AccordingItems}
                 />
             </div>
 
-            <div className="flex flex-col items-center gap-5 mt-36 lg:mt-60">
+            <div className="flex flex-col items-center gap-5 mt-40 lg:mt-60">
                 <h1 className=' flex flex-col items-center text-[40px] leading-[44px] text-center font-bold headline-gradient-2 xl:text-[70px] xl:leading-[77px]'>Multi-Tiered Affiliate and <span>Referral Program</span></h1>
-                <p className="text-[#FFF] text-center text-[17px] leading-[25.5px] tracking-[0.51px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px] mb-[50px] xl:mb-[100px] xl:px-0 px-10">Join our Revenue Ladder: Every referral you make enhances your stature in the ecosystem.</p>
+                <p className="text-[#FFF] text-center text-[17px] leading-[25.5px] tracking-[0.51px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px] mb-[20px] xl:mb-[100px] xl:px-0 px-10">Join our Revenue Ladder: Every referral you make enhances your stature in the ecosystem.</p>
 
-                <div className='flex flex-col items-center gap-[20px] mb-[20px] xl:mb-[100px]'>
+                <div className='flex flex-col items-center gap-[20px] mb-[20px] xl:mb-[100px] '>
                     {/* details bars start */}
                     <ReferralDetailBox
                         bgColor='#00FFC2'
@@ -111,7 +111,7 @@ function Section3() {
                     {/* details bars  end*/}
                 </div>
 
-                <div className="flex flex-col gap-[50px] items-center mb-[50px] xl:mb-[100px] xl:gap-[100px] xl:w-[1250px] 2xl:w-[1440px]">
+                <div className="flex flex-col gap-[25px] items-center mb-[50px] xl:mb-[100px] xl:gap-[100px] xl:w-[1250px] 2xl:w-[1440px]">
                     <h1 className=' flex flex-col items-center font-bold headline-gradient-1 text-[40px] leading-[44px] xl:leading-[77px] xl:text-[70px]'>
                         Features
                     </h1>

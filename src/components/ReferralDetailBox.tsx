@@ -1,7 +1,7 @@
 
 function ReferralDetailBox({ bgColor, level, title, description }: { bgColor: string, level: number, title: string, description: string }) {
     return (
-        <div className={`flex items-center rounded-[300px] h-[110px] px-5 xl:h-[136px] xl:w-[1250px] 2xl:w-[1440px]  xl:px-12`} style={{
+        <div className={`flex items-center rounded-[300px] h-[110px] px-[3vw] xl:h-[136px] xl:w-[1250px] 2xl:w-[1440px]  xl:px-12`} style={{
             background: bgColor
         }}>
             <div className='flex items-center gap-[10px] xl:mr-[100px]'>

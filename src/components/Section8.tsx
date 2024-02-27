@@ -5,7 +5,7 @@ import TimelineMobile from "./roadMap/RoadMapMobile";
 function Section8() {
   return (
     <div className="relative flex flex-col items-center px-16 gap-5 bg-[] pb-[50px] xl:pb-28 xl:border-b xl:border-opacity-20 xl:border-[#FFF]">
-      <h1 className=" flex flex-col items-center text-[40px] leading-[44px] text-center xl:text-[150px] font-bold xl:leading-[165px] headline-gradient-2">
+      <h1 className=" flex flex-col items-center text-[70px] leading-[77px] text-center xl:text-[150px] font-bold xl:leading-[165px] headline-gradient-2">
         Roadmap
       </h1>
       <img

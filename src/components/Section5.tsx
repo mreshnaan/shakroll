@@ -5,13 +5,13 @@ function Section5() {
     return (
         <div className='flex flex-col items-center px-16 gap-5 '>
             <h1 className=' flex flex-col items-center text-[40px] leading-[44px] font-bold headline-gradient-2 xl:text-[70px] xl:leading-[77px]'>Tokenomics</h1>
-            <p className="text-[#FFF] text-center text-[17px] leading-[25.5px] tracking-[0.51px] mb-[50px] xl:text-[24px]  xl:leading-[36px] xl:tracking-[0.72px] xl:mb-[100px]">Join our Revenue Ladder: Every referral you make enhances your stature in the ecosystem.</p>
+            <p className="text-[#FFF] text-center text-[17px] leading-[25.5px] tracking-[0.51px] mb-[20px] xl:text-[24px]  xl:leading-[36px] xl:tracking-[0.72px] xl:mb-[100px]">Join our Revenue Ladder: Every referral you make enhances your stature in the ecosystem.</p>
 
             <div className="flex flex-col items-center justify-center gap-[50px] mb-[50px] xl:gap-[100px] xl:flex-row  xl:mb-[100px]">
 
                 <img src="/assets/circle-chart.svg" alt="" srcSet="" className="h-[335px] w-[335px] xl:h-[668px] xl:w-[668px]" loading="lazy" />
 
-                <div className="flex flex-col items-center w-[350px] gap-12 xl:items-start xl:w-[518px]">
+                <div className="flex flex-col items-center w-[350px] gap-12 xl:items-start xl:w-[518px] uppercase font-medium text-sm">
                     <div className="flex flex-col">
                         <StatsDetail lable="Sales Round 1" strokcolor="#69EAFF" percentage="2,5%" />
                         <StatsDetail lable="Sales Round 2" strokcolor="#75BDFF" percentage="3,0%" />

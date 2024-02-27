@@ -2,7 +2,7 @@
 function DetailBox({ title, contentTitle, content, icon, className }: { title: string, contentTitle: string, content: string, icon?: React.ReactNode, className?: string }) {
     return (
         <div className={className}>
-            <div className={`bg-[url("/assets/mobile-rectangle.svg")]  xl:bg-[url("/assets/rectangle.svg")] bg-no-repeat flex flex-col items-center p-8 w-[298px] xl:w-[318px] xl:bg-contain 2xl:w-[418px] gap-8`}>
+            <div className={`bg-[url("/assets/mobile-rectangle.svg")]  xl:bg-[url("/assets/rectangle.svg")] bg-no-repeat flex flex-col items-center p-4 w-[298px] xl:w-[318px] xl:bg-contain 2xl:w-[418px] gap-8`}>
                 <h1 className='text-[24px] font-bold leading-[36px] text-[#FFF] flex flex-col justify-center items-center xl:flex-row gap-5'>
                     {
                         icon ?

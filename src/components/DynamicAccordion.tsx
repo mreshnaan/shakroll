@@ -22,12 +22,12 @@ export function DynamicAccordion({ items, titleClassName, iconClassName, content
               <span className={cn(`text-[#003BD2] group-data-[state=open]:text-[#69EAFF]`, iconClassName)}>
                 {item.icon}
               </span>
-              <span className={cn(`text-[17px] font-bold leading-[18.7px] xl:text-[35px] xl:leading-[38.5px]`, titleClassName)}>
+              <span className={cn(`text-[17px] text-start pe-5 font-bold leading-[18.7px] xl:text-[35px] xl:leading-[38.5px]`, titleClassName)}>
                 {item.title}
               </span>
             </div>
           </AccordionTrigger>
-          <AccordionContent className={cn("", contentClassName)}>
+          <AccordionContent className={cn("text-start", contentClassName)}>
             {item.content}
           </AccordionContent>
         </AccordionItem>

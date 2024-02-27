@@ -8,13 +8,13 @@ function Section2() {
         <div className='relative flex flex-col items-center pt-10 px-5 gap-10 lg:p-28 lg:gap-[100px] '>
 
             {/* Gradient color overlay */}
-            <img className="absolute top-0 left-0  bg-no-repeat z-[-1] lg:h-[1500px] lg:w-[1500px] " src="/assets/ellipse1.png" />
+            {/* <img className="absolute top-0 left-0  bg-no-repeat z-[-1] lg:h-[1500px] lg:w-[1500px] " src="/assets/ellipse1.png" />
             <img className=" hidden absolute lg:block lg:top-[920px] right-0   bg-no-repeat z-[-1] lg:h-[2500px] lg:w-[1500px] " src="/assets/ellipse2.svg" />
-            <img className=" absolute lg:hidden top-[1420px] h-[1500px] w-[1500px] right-0 z-[-1]" src="/assets/mobileEllipse2.svg" />
+            <img className=" absolute lg:hidden top-[1420px] h-[1500px] w-[1500px] right-0 z-[-1]" src="/assets/mobileEllipse2.svg" /> */}
 
             <h1 className=' flex flex-col items-center text-[40px] leading-[44px] text-center font-bold  headline-gradient-2 xl:text-[70px] xl:leading-[77px]'>Benefits of Buying $SKR <span>Token During Presale</span></h1>
 
-            <div className='flex flex-col items-center gap-[50px]'>
+            <div className='flex flex-col items-center gap-[20px]'>
                 {/* details bars start */}
                 <DetailBar
                     title="Exclusive Privileges"
@@ -32,7 +32,7 @@ function Section2() {
                         content="In the Sharkroll ecosystem, $SKR tokens are your key to unlocking a world of essential and substantial
                         rewards. Here's a distilled look at how your investment can grow and flourish:"
                     />
-                    <div className="w-0 h-0  border-l-[40px] border-l-transparent  border-t-[30px] border-t-[#012c9a]  border-r-[40px] border-r-transparent">
+                    <div className="w-0 h-0 mt-[-1px]  border-l-[40px] border-l-transparent  border-t-[30px] border-t-[#001E69]  border-r-[40px] border-r-transparent">
                     </div>
                 </div>
 
@@ -44,19 +44,22 @@ function Section2() {
                         <DetailBox
                             title="Strategic Buybacks"
                             contentTitle="Enhancing Your Investment"
-                            content="We actively buy back $SKR tokens using a portion of daily revenues."
+                            content="We actively buy back $SKR tokens using a portion of daily revenues. This direct action boosts the token's value, making your investment more potent over time."
+                            icon={<img src="assets/1-icon.svg"/>}
                         />,
                         <DetailBox
                             title=" The Burn"
                             contentTitle="Creating Scarcity and Value"
                             content="As we reduce the supply of $SKR tokens, each one you hold becomes rarer and potentially more valuable.
                       This scarcity is a fundamental principle designed to enhance the worth of your investment."
+                      icon={<img src="assets/2-icon.svg"/>}
                         />,
                         <DetailBox
                             title="  Value Surge"
                             contentTitle="Potential for Growth"
                             content="  With a decreasing supply and increasing demand, the $SKR token is poised for growth.
                         This dynamic has the potential to significantly increase the value of your tokens."
+                        icon={<img src="assets/3-icon.svg"/>}
                         />
 
                     ]} classNames="xl:hidden w-[330px]" />
@@ -65,7 +68,8 @@ function Section2() {
                         className={"hidden xl:block"}
                         title="Strategic Buybacks"
                         contentTitle="Enhancing Your Investment"
-                        content="We actively buy back $SKR tokens using a portion of daily revenues."
+                        content="We actively buy back $SKR tokens using a portion of daily revenues. This direct action boosts the token's value, making your investment more potent over time."
+                        icon={<img src="assets/1-icon.svg"/>}
                     />
                     <DetailBox
                         className={"hidden xl:block"}
@@ -73,6 +77,7 @@ function Section2() {
                         contentTitle="Creating Scarcity and Value"
                         content="As we reduce the supply of $SKR tokens, each one you hold becomes rarer and potentially more valuable.
                         This scarcity is a fundamental principle designed to enhance the worth of your investment."
+                        icon={<img src="assets/2-icon.svg"/>}
                     />
 
                     <DetailBox
@@ -81,6 +86,7 @@ function Section2() {
                         contentTitle="Potential for Growth"
                         content="  With a decreasing supply and increasing demand, the $SKR token is poised for growth.
                         This dynamic has the potential to significantly increase the value of your tokens."
+                        icon={<img src="assets/3-icon.svg"/>}
                     />
                 </div>
                 {/* divider */}

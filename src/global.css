@@ -80,9 +80,13 @@
   }
 
   .detail-bar-1 {
-    background: linear-gradient(92deg, #003BD2 0%, #001E69 100.12%);
+    background: linear-gradient(180deg, #003BD2 0%, #001E69 100.12%);
   }
-
+  .border-gradient-section-7 {
+    border: 3px solid;
+    border-radius: 20px !important;
+    border-image: linear-gradient(to bottom, #003BD2, #00FFC2, #003BD2) 1;
+}
   .detail-bar-divider {
     background: linear-gradient(90deg, rgba(0, 255, 194, 0.00) 0%, #00FFC2 50.65%, rgba(0, 255, 194, 0.00) 100%);
   }

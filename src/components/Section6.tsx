@@ -21,7 +21,8 @@ function Section6() {
                     </h1>
                     <h1 className="xl:hidden flex flex-col  text-[#FFF] text-[17px] leading-[25.5px] font-bold text-center xl:text-[35px] xl:leading-[38px]">Overall Global Casinos & Online Gambling Market Size: 2020 - 2023
                     </h1>
-                    <img src="/assets/line-chart.svg" alt="" srcSet="" className="w-[350px] h-[300px] xl:h-[537px] xl:w-[1063px]" loading="lazy" />
+                    <img src="/assets/line-chart.svg" alt="" srcSet="" className="hidden xl:flex w-[350px] h-[300px] xl:h-[537px] xl:w-[1063px]" loading="lazy" />
+                    <img src="/assets/mobile-graph.svg" alt="" srcSet="" className="xl:hidden flex w-[350px] h-[300px] xl:h-[537px] xl:w-[1063px]" loading="lazy" />
                 </div>
                 <Divider className=" xl:hidden" />
             </div>
