@@ -33,7 +33,7 @@ const Timeline: React.FC = () => {
     console.log(activeStep);
   };
 
-  const handleScroll = (e: { preventDefault: () => void; stopPropagation: () => void; }) => {
+  const handleScroll = () => {
     console.log("scrollDirection : ", scrollDirection);
     if (scrollDirection === 'up' && activeStep >= 1) {
       setActiveStep(activeStep - 1);
