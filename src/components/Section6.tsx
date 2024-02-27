@@ -16,8 +16,10 @@ function Section6() {
                 </p>
                 <Divider />
                 <div className="flex flex-col gap-5">
-                    <h1 className="flex flex-col  text-[#FFF] text-[17px] leading-[25.5px] font-bold text-center xl:text-[35px] xl:leading-[38px]">Overall Global Casinos & Online Gambling Market Size:
+                    <h1 className="hidden xl:flex flex-col  text-[#FFF] text-[17px] leading-[25.5px] font-bold text-center xl:text-[35px] xl:leading-[38px]">Overall Global Casinos & Online Gambling Market Size:
                         <span>2020 - 2023</span>
+                    </h1>
+                    <h1 className="xl:hidden flex flex-col  text-[#FFF] text-[17px] leading-[25.5px] font-bold text-center xl:text-[35px] xl:leading-[38px]">Overall Global Casinos & Online Gambling Market Size: 2020 - 2023
                     </h1>
                     <img src="/assets/line-chart.svg" alt="" srcSet="" className="w-[350px] h-[300px] xl:h-[537px] xl:w-[1063px]" loading="lazy" />
                 </div>

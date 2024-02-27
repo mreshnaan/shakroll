@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import DetailsButton from "./DetailsButton";
 import { steps } from "./dates";
+import { useScrollDirection } from "../useScrollDirection";
 
 interface TimelineStepProps {
   date: string;
@@ -11,7 +12,7 @@ const TimelineStep: React.FC<TimelineStepProps> = ({ actionLabels }) => {
   return (
     <div className="flex items-center mb-2 md:mb-4">
       <div>
-        <div className="flex flex-wrap">
+        <div className="flex lg:flex-row flex-col flex-wrap">
           {actionLabels.map((label, index) => (
             <div className="px-1 py-1 md:px-2 md:py-2" key={index}>
               <DetailsButton label={label} />
@@ -26,10 +27,20 @@ const TimelineStep: React.FC<TimelineStepProps> = ({ actionLabels }) => {
 const Timeline: React.FC = () => {
   const [activeStep, setActiveStep] = useState<number>(0);
   const progress = (activeStep / (steps.length - 1)) * 100;
-
+  const scrollDirection = useScrollDirection();
   const handleClick = (index: number) => {
     setActiveStep(index);
     console.log(activeStep);
+  };
+
+  const handleScroll = (e: { preventDefault: () => void; stopPropagation: () => void; }) => {
+    console.log("scrollDirection : ", scrollDirection);
+    if (scrollDirection === 'up' && activeStep >= 1) {
+      setActiveStep(activeStep - 1);
+    } else if (scrollDirection === 'down' && activeStep <= 3) {
+      setActiveStep(activeStep + 1);
+    }
+
   };
 
   return (
@@ -93,7 +104,8 @@ const Timeline: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex justify-center flex-grow col-span-6 overflow-auto">
+        <div className="flex justify-center flex-grow col-span-6 overflow-auto" onWheel={handleScroll}
+      onTouchMove={handleScroll}>
           {activeStep !== null && steps[activeStep] && (
             <TimelineStep key={activeStep} {...steps[activeStep]} />
           )}

@@ -7,7 +7,7 @@ import { CustomCarousel } from "./Slider"
 
 function Section3() {
     return (
-        <div className='relative flex flex-col items-center py-14 xl:py-28 bg-[url("/assets/")] lg:pr-0 xl:px-28'>
+        <div className='relative flex flex-col items-center pt-14 xl:py-28 bg-[url("/assets/")] lg:pr-0 xl:px-28'>
             {/* gradient images  */}
             <img className="hidden absolute lg:block lg:top-[1350px] lg:right-0  bg-no-repeat z-[-1] lg:h-[2500px] lg:w-[1500px] " src="/assets/shark1.svg" />
             <img className="lg:hidden absolute top-[1335px] right-0  bg-no-repeat z-[-1] h-[1500px] w-[1500px] " src="/assets/mobileShark1.svg" />
@@ -16,7 +16,8 @@ function Section3() {
 
             <img className=" lg:hidden absolute top-[2620px] left-0  bg-no-repeat z-[-1] h-[1500px] w-[1500px]" src="/assets/mobileShark2.svg" />
 
-            <h1 className=' flex flex-col items-center text-[40px] leading-[44px] font-bold headline-gradient-2 text-center mb-5 xl:text-[120px] xl:leading-[132px] xl:mb-[30px] xl:text-center 2xl:text-left'>Dive into the Depths <span>of Sharkroll </span></h1>
+            <h1 className='hidden xl:flex flex-col items-center text-[40px] leading-[44px] font-bold headline-gradient-2 text-center mb-5 xl:text-[120px] xl:leading-[132px] xl:mb-[30px] xl:text-center 2xl:text-left'>Dive into the Depths <span>of Sharkroll </span></h1>
+            <h1 className='xl:hidden flex flex-col items-center text-[40px] leading-[44px] font-bold headline-gradient-2 text-center mb-5 xl:text-[120px] xl:leading-[132px] xl:mb-[30px] xl:text-center 2xl:text-left'>Dive into the  <span>Depths of</span>Sharkroll</h1>
 
             <p className="text-[#FFF] text-[17px] leading-[25.5px]  tracking-[0.51px] px-28 text-center mb-[50px] xl:mb-[100px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px]">Uncover the Elements of Our Oceanic Empire</p>
 
@@ -31,10 +32,10 @@ function Section3() {
                         <h1 className="text-[#69EAFF] font-bold text-[17px] leading-[18.7px] xl:text-[35px] xl:leading-[38px]">Sharkroll Casino:</h1>
                     </div>
                     <div className="relative">
-                        <h1 className=" text-[40px] leading-[44px] pl-[55px] font-bold text-[#FFF] flex flex-col xl:text-[70px] xl:pl-[55px] xl:leading-[77px]">
+                        <h1 className=" text-[40px] leading-[44px] pl-[40px] font-bold text-[#FFF] flex flex-col xl:text-[70px] xl:pl-[55px] xl:leading-[77px]">
                             Where the <span>Big Sharks</span> <span className="text-[#69EAFF]">Play</span>
                         </h1>
-                        <img src="/assets/shark-with-coin.png" alt="" className="absolute top-14 left-14 w-[335px] h-[248.349px] xl:top-20 xl:left-24 xl:w-[501px] xl:h-[372px]" />
+                        <img src="/assets/shark-with-coin.png" alt="" className="absolute top-14 left-10 w-[335px] h-[248.349px] xl:top-20 xl:left-24 xl:w-[501px] xl:h-[372px]" />
                     </div>
 
 
@@ -76,7 +77,7 @@ function Section3() {
 
             <div className="flex flex-col items-center gap-5 mt-36 lg:mt-60">
                 <h1 className=' flex flex-col items-center text-[40px] leading-[44px] text-center font-bold headline-gradient-2 xl:text-[70px] xl:leading-[77px]'>Multi-Tiered Affiliate and <span>Referral Program</span></h1>
-                <p className="text-[#FFF] text-center text-[17px] leading-[25.5px] tracking-[0.51px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px] mb-[50px] xl:mb-[100px]">Join our Revenue Ladder: Every referral you make enhances your stature in the ecosystem.</p>
+                <p className="text-[#FFF] text-center text-[17px] leading-[25.5px] tracking-[0.51px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px] mb-[50px] xl:mb-[100px] xl:px-0 px-10">Join our Revenue Ladder: Every referral you make enhances your stature in the ecosystem.</p>
 
                 <div className='flex flex-col items-center gap-[20px] mb-[20px] xl:mb-[100px]'>
                     {/* details bars start */}

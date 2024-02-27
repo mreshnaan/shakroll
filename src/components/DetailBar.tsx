@@ -8,8 +8,8 @@ function DetailBar({ title, content }: { title: string, content: string }) {
                 </svg>
                 <h1 className='font-bold text-[#69EAFF] text-[24px] leading-[26px] w-[172px] text-center xl:text-[30px] xl:leading-[38px] xl:w-[330px] xl:text-left  '>{title}</h1>
             </div>
-            <div className='hidden xl:block h-16 w-[1px] bg-[#00FFC2] mr-8'></div>
-            <div className=' xl:hidden h-[1px] w-[192px] bg-[#00FFC2]'></div>
+            <div className='hidden xl:block h-16 w-[1px] bg-gradient-to-r from-transparent via-teal-400 to-transparent mr-8'></div>
+            <div className=' xl:hidden h-[1px] w-[192px] bg-gradient-to-r from-transparent via-teal-400 to-transparent'></div>
             <div className=' text-[14px] leading-[21px] text-center xl:text-[19px] xl:leading-[28px] xl:text-left text-[#FFF]'>
                 {content}
             </div>

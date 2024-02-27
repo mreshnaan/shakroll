@@ -2,7 +2,7 @@ import ContentWithBorder from "./ContentWithBorder"
 
 function Section7() {
     return (
-        <div className='relative flex flex-col items-center pb-[50px] gap-5 xl:pb-28 xl:border-b xl:border-opacity-20 xl:border-[#FFF]'>
+        <div className='relative flex flex-col items-center pb-[50px] gap-5 xl:pb-28 '>
             <img className="hidden absolute lg:block lg:top-[0] lg:right-0  bg-no-repeat z-[-1] lg:h-[2500px] lg:w-[1500px] " src="/assets/shark3.svg" />
             <img className="absolute top-[580px] right-0  bg-no-repeat z-[-1] h-[1500px] w-[1500px] " src="/assets/mobileShark3.svg" />
 
@@ -11,7 +11,7 @@ function Section7() {
                 <p className="text-[#FFF] text-[17px] leading-[25.5px] tracking-[0.5] mb-[50px] xl:text-[24px] xl:leading-[36px] xl:tracking-[0.72px] xl:mb-[100px]">The Meteoric Rise of Crypto Casinos</p>
 
                 <div className="flex flex-col items-center gap-0 xl:gap-[100px]">
-                    <p className="flex flex-col text-[#FFF] text-[14px] w-[335px] gap-3 font-light text-center xl:leading-[26px] xl:text-[20px] xl:w-[1250px] 2xl:w-[1330px]">
+                    <p className="flex flex-col text-[#FFF] text-[14px] w-[335px] gap-3 font-light text-center xl:leading-[26px] xl:text-[20px] xl:w-[1250px] 2xl:w-[1330px] xl:pb-0 pb-10">
                         Sharkroll stands out in the gaming ocean with its user-friendly and smooth platform, allowing for seamless gameplay. Our robust marketing efforts are
                         quickly making us a recognized name in online gaming. Dive into a world where your gaming experience is enhanced by:
                     </p>
