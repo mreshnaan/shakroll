@@ -67,7 +67,7 @@ function Section8() {
 
   return (
     <div
-      className={`relative flex flex-col items-center px-16 gap-5 bg-[] pb-[50px] xl:pb-28 xl:border-b xl:border-opacity-20 xl:border-[#FFF] ${scrollYPosition > position.y && timelineScroll < 200 && 'xl:sticky'} w-full xl:top-[0vh]`}
+      className={`relative flex flex-col items-center px-5 gap-5 bg-[] pb-[50px] xl:pb-28 xl:border-b xl:border-opacity-20 xl:border-[#FFF] ${scrollYPosition > position.y && timelineScroll < 200 && 'xl:sticky'} w-full xl:top-[0vh]`}
       ref={elementRef}
     >
       <h1 className=" flex flex-col items-center text-[70px] leading-[77px] text-center xl:text-[150px] font-bold xl:leading-[165px] headline-gradient-2">
