@@ -35,5 +35,9 @@ export const accordingIcons = {
     </svg>,
     vector: <svg xmlns="http://www.w3.org/2000/svg" width="19" height="17" viewBox="0 0 19 17" fill="none">
         <path d="M4.01923 0L7.97214 11.1982L0 17L10.6875 15.0385L19 17L4.01923 0Z" fill="#69EAFF" />
+    </svg>,
+    blueVector: <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4.01923 0L7.97214 11.1982L0 17L10.6875 15.0385L19 17L4.01923 0Z" fill="#003BD2"/>
     </svg>
+    
 }

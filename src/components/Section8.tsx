@@ -24,7 +24,6 @@ function Section8() {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [elementRef]);
-  console.log("position : ", position);
 
   const handleScroll = () => {
     const newScrollYPosition = window.pageYOffset;
@@ -38,36 +37,36 @@ function Section8() {
     };
   }, []);
 
-  // Now the vertical position is available with `scrollYPosition`
-  // console.log(scrollYPosition);
   const scrollDirection = useScrollDirection();
 
   const handleScrollTimeline = () => {
-    console.log("scrollDirection : ", scrollDirection);
-    if (scrollDirection === 'up' && activeStep >= 1 && timelineScroll <= activeStep*50) {
+    if (
+      scrollDirection === "up" &&
+      activeStep >= 1 &&
+      timelineScroll <= activeStep * 50
+    ) {
       setActiveStep(activeStep - 1);
-    } else if (scrollDirection === 'down' && activeStep <= 3 && timelineScroll > activeStep*50) {
+    } else if (
+      scrollDirection === "down" &&
+      activeStep <= 3 &&
+      timelineScroll > activeStep * 50
+    ) {
       setActiveStep(activeStep + 1);
     }
-
   };
 
   React.useEffect(() => {
-    if(scrollYPosition > position.y ) {
+    if (scrollYPosition > position.y) {
       handleScrollTimeline();
     }
     setTimelineScroll(scrollYPosition - position.y);
-    
   }, [scrollYPosition]);
-
-  React.useEffect(() => {
-    console.log("timelineScroll : ", timelineScroll);
-    
-  }, [timelineScroll]);
 
   return (
     <div
-      className={`relative flex flex-col items-center px-5 gap-5 bg-[] pb-[50px] xl:pb-28 xl:border-b xl:border-opacity-20 xl:border-[#FFF] ${scrollYPosition > position.y && timelineScroll < 200 && 'xl:sticky'} w-full xl:top-[0vh]`}
+      className={`relative flex flex-col items-center px-5 gap-5 bg-[] pb-[50px] xl:pb-28 xl:border-b xl:border-opacity-20 xl:border-[#FFF] ${
+        scrollYPosition > position.y && timelineScroll < 200 && "xl:sticky"
+      } w-full xl:top-[0vh]`}
       ref={elementRef}
     >
       <h1 className=" flex flex-col items-center text-[70px] leading-[77px] text-center xl:text-[150px] font-bold xl:leading-[165px] headline-gradient-2">
@@ -87,7 +86,7 @@ function Section8() {
       />
 
       <div className="flex flex-col items-center w-330px gap-[50px] xl:gap-[100px] xl:w-[1250px] 2xl:w-[1330px]">
-        <Timeline activeStep={activeStep} setActiveStep={setActiveStep}/>
+        <Timeline activeStep={activeStep} setActiveStep={setActiveStep} />
         <TimelineMobile />
         <Divider />
         <div className="flex flex-col items-center justify-center gap-16 xl:flex-row xl:gap-52 ">

@@ -23,23 +23,15 @@ const TimelineStep: React.FC<TimelineStepProps> = ({ actionLabels }) => {
   );
 };
 
-const Timeline: React.FC<{ activeStep: any; setActiveStep: Dispatch<SetStateAction<number>> }> = ({activeStep, setActiveStep}) => {
+const Timeline: React.FC<{
+  activeStep: any;
+  setActiveStep: Dispatch<SetStateAction<number>>;
+}> = ({ activeStep, setActiveStep }) => {
   // const [activeStep, setActiveStep] = useState<number>(0);
   const progress = (activeStep / (steps.length - 1)) * 100;
   const handleClick = (index: number) => {
     setActiveStep(index);
-    console.log(activeStep);
   };
-
-  // const handleScroll = () => {
-  //   console.log("scrollDirection : ", scrollDirection);
-  //   if (scrollDirection === 'up' && activeStep >= 1) {
-  //     setActiveStep(activeStep - 1);
-  //   } else if (scrollDirection === 'down' && activeStep <= 3) {
-  //     setActiveStep(activeStep + 1);
-  //   }
-
-  // };
 
   return (
     <div className="hidden lg:flex">
@@ -102,8 +94,7 @@ const Timeline: React.FC<{ activeStep: any; setActiveStep: Dispatch<SetStateActi
           </div>
         </div>
 
-        <div className="flex justify-center flex-grow col-span-6 overflow-auto"
-      >
+        <div className="flex justify-center flex-grow col-span-6 overflow-auto">
           {activeStep !== null && steps[activeStep] && (
             <TimelineStep key={activeStep} {...steps[activeStep]} />
           )}
@@ -113,4 +104,4 @@ const Timeline: React.FC<{ activeStep: any; setActiveStep: Dispatch<SetStateActi
   );
 };
 
-export  {TimelineStep,Timeline};
+export { TimelineStep, Timeline };
