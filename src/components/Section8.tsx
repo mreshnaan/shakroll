@@ -1,10 +1,74 @@
+import { useEffect, useRef, useState } from "react";
 import Divider from "./Divider";
 import { Timeline } from "./roadMap/RoadMap";
 import TimelineMobile from "./roadMap/RoadMapMobile";
+import React from "react";
+import { useScrollDirection } from "./useScrollDirection";
 
 function Section8() {
+  const [scrollYPosition, setScrollYPosition] = React.useState(0);
+  const [timelineScroll, setTimelineScroll] = React.useState(0);
+
+  const elementRef = useRef<any>(null);
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [activeStep, setActiveStep] = useState<number>(0);
+
+  useEffect(() => {
+    function handleResize() {
+      const x = elementRef.current.offsetLeft;
+      const y = elementRef.current.offsetTop;
+      setPosition({ x, y });
+    }
+
+    handleResize(); // initial call to get position of the element on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [elementRef]);
+
+  const handleScroll = () => {
+    const newScrollYPosition = window.pageYOffset;
+    setScrollYPosition(newScrollYPosition);
+  };
+
+  React.useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const scrollDirection = useScrollDirection();
+
+  const handleScrollTimeline = () => {
+    if (
+      scrollDirection === "up" &&
+      activeStep >= 1 &&
+      timelineScroll <= activeStep * 50
+    ) {
+      setActiveStep(activeStep - 1);
+    } else if (
+      scrollDirection === "down" &&
+      activeStep <= 3 &&
+      timelineScroll > activeStep * 50
+    ) {
+      setActiveStep(activeStep + 1);
+    }
+  };
+
+  React.useEffect(() => {
+    if (scrollYPosition > position.y) {
+      handleScrollTimeline();
+    }
+    setTimelineScroll(scrollYPosition - position.y);
+  }, [scrollYPosition]);
+
   return (
-    <div className="relative flex flex-col items-center px-16 gap-5 bg-[] pb-[50px] xl:pb-28 xl:border-b xl:border-opacity-20 xl:border-[#FFF]">
+    <div
+      className={`relative flex flex-col items-center px-5 gap-5 bg-[] pb-[50px] xl:pb-28 xl:border-b xl:border-opacity-20 xl:border-[#FFF] ${
+        scrollYPosition > position.y && timelineScroll < 200 && "xl:sticky"
+      } w-full xl:top-[0vh]`}
+      ref={elementRef}
+    >
       <h1 className=" flex flex-col items-center text-[70px] leading-[77px] text-center xl:text-[150px] font-bold xl:leading-[165px] headline-gradient-2">
         Roadmap
       </h1>
@@ -22,7 +86,7 @@ function Section8() {
       />
 
       <div className="flex flex-col items-center w-330px gap-[50px] xl:gap-[100px] xl:w-[1250px] 2xl:w-[1330px]">
-        <Timeline />
+        <Timeline activeStep={activeStep} setActiveStep={setActiveStep} />
         <TimelineMobile />
         <Divider />
         <div className="flex flex-col items-center justify-center gap-16 xl:flex-row xl:gap-52 ">

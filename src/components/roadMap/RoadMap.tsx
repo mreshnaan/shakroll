@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import DetailsButton from "./DetailsButton";
 import { steps } from "./dates";
-import { useScrollDirection } from "../useScrollDirection";
 
 interface TimelineStepProps {
   date: string;
@@ -24,23 +23,14 @@ const TimelineStep: React.FC<TimelineStepProps> = ({ actionLabels }) => {
   );
 };
 
-const Timeline: React.FC = () => {
-  const [activeStep, setActiveStep] = useState<number>(0);
+const Timeline: React.FC<{
+  activeStep: any;
+  setActiveStep: Dispatch<SetStateAction<number>>;
+}> = ({ activeStep, setActiveStep }) => {
+  // const [activeStep, setActiveStep] = useState<number>(0);
   const progress = (activeStep / (steps.length - 1)) * 100;
-  const scrollDirection = useScrollDirection();
   const handleClick = (index: number) => {
     setActiveStep(index);
-    console.log(activeStep);
-  };
-
-  const handleScroll = () => {
-    console.log("scrollDirection : ", scrollDirection);
-    if (scrollDirection === 'up' && activeStep >= 1) {
-      setActiveStep(activeStep - 1);
-    } else if (scrollDirection === 'down' && activeStep <= 3) {
-      setActiveStep(activeStep + 1);
-    }
-
   };
 
   return (
@@ -104,8 +94,7 @@ const Timeline: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex justify-center flex-grow col-span-6 overflow-auto" onWheel={handleScroll}
-      onTouchMove={handleScroll}>
+        <div className="flex justify-center flex-grow col-span-6 overflow-auto">
           {activeStep !== null && steps[activeStep] && (
             <TimelineStep key={activeStep} {...steps[activeStep]} />
           )}
@@ -115,4 +104,4 @@ const Timeline: React.FC = () => {
   );
 };
 
-export  {TimelineStep,Timeline};
+export { TimelineStep, Timeline };

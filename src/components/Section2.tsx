@@ -32,7 +32,7 @@ function Section2() {
                         content="In the Sharkroll ecosystem, $SKR tokens are your key to unlocking a world of essential and substantial
                         rewards. Here's a distilled look at how your investment can grow and flourish:"
                     />
-                    <div className="w-0 h-0 mt-[-1px]  border-l-[40px] border-l-transparent  border-t-[30px] border-t-[#001E69]  border-r-[40px] border-r-transparent">
+                    <div className="w-0 h-0 mt-[-1px]  border-l-[40px] border-l-transparent  border-t-[15px] border-t-[#001E69]  border-r-[40px] border-r-transparent">
                     </div>
                 </div>
 

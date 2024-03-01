@@ -36,7 +36,7 @@ function Section5() {
                         <h1 className="text-[#FFF] text-[24px] leading-[31px] text-center font-bold xl:text-left">
                             Total Supply:
                         </h1>
-                        <h1 className=' flex flex-col text-[30px] text-center font-bold  headline-gradient-1 xl:text-[50px] xl:leading-[65px] xl:text-left'>5.000.000.000</h1>
+                        <h1 className=' flex flex-col text-[30px] text-center font-bold  headline-gradient-1  leading-[30px] xl:text-[50px] xl:leading-[65px] xl:text-left'>5.000.000.000</h1>
                         <p className="text-[14px] leading-[21px] text-center text-[#FFF] xl:text-[20px] xl:leading-[30px] xl:text-left">
                             The tokens allocated to the
                             team will be subject to a vesting period of two years, during which they will be released incrementally on a monthly basis.
