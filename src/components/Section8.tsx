@@ -1,8 +1,8 @@
+import React from "react";
 import { useEffect, useRef, useState } from "react";
 import Divider from "./Divider";
 import { Timeline } from "./roadMap/RoadMap";
 import TimelineMobile from "./roadMap/RoadMapMobile";
-import React from "react";
 import { useScrollDirection } from "./useScrollDirection";
 
 function Section8() {
@@ -20,7 +20,7 @@ function Section8() {
       setPosition({ x, y });
     }
 
-    handleResize(); // initial call to get position of the element on mount
+    handleResize();
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, [elementRef]);
@@ -75,12 +75,12 @@ function Section8() {
       <img
         className="hidden absolute lg:block lg:top-[350px] lg:left-0  bg-no-repeat z-[-1] lg:h-[2500px] lg:w-[1500px] "
         src="/assets/ellipse4.svg"
+        alt="Section button"
       />
 
       <img
         src="/assets/Group-513.svg"
-        alt=""
-        srcSet=""
+        alt="Section Decorative"
         className="w-[334px] h-[42px] mb-[50px] xl:mb-[100px] xl:w-[739px] xl:h-[92px]"
         loading="lazy"
       />
