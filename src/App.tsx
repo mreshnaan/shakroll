@@ -10,12 +10,10 @@ const Section7 = lazy(() => import("./components/Section7"));
 const Section8 = lazy(() => import("./components/Section8"));
 const Section9 = lazy(() => import("./components/Section9"));
 const Footer = lazy(() => import("./components/footers/Footer"));
-import GoogleAnalytics from "./lib/GoogleAnalytics";
 
 function App() {
   return (
     <>
-      <GoogleAnalytics />
       <Suspense fallback={<div>Loading...</div>}>
         <div className="w-full min-h-screen">
           <Header />
