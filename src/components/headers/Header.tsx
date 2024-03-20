@@ -47,7 +47,9 @@ export default function Header() {
                     >
                       {item.name}
                     </a>
+                    
                   ))}
+                  <w3m-button />
                 </div>
               </div>
               <div className="flex -mr-2 lg:hidden">
@@ -81,6 +83,7 @@ export default function Header() {
               loading="lazy"
             />
             <div className="items-start px-2 pt-12 pb-3 space-y-1">
+                    <div className="mx-auto flex  justify-center">  <w3m-button /></div>
               {navigation.map((item) => (
                 <>
                   <Disclosure.Button
