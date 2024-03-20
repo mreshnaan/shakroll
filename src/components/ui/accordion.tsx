@@ -30,8 +30,8 @@ const AccordionTrigger = React.forwardRef<
       {...props}
     >
       {children}
-      <div className='h-[22px] w-[22px] lg:h-[38px] lg:w-[38px] flex items-center justify-center border group-data-[state=open]:border-[#69EAFF]'>
-        <Plus className="h-3 w-3 lg:h-6 lg:w-6 shrink-0 transition-transform duration-200 group-data-[state=open]:hidden" />
+      <div className='h-[22px] w-[22px] lg:h-[38px] lg:w-[38px] flex items-center justify-center border border-white group-data-[state=open]:border-[#69EAFF]'>
+        <Plus className="h-3 w-3 lg:h-6 lg:w-6 shrink-0 transition-transform duration-200 group-data-[state=open]:hidden text-white" />
         <Minus className="h-3 w-3 lg:h-6 lg:w-6 shrink-0 transition-transform duration-200 group-data-[state=closed]:hidden" />
       </div>
     </AccordionPrimitive.Trigger>

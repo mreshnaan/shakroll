@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
+import { Toaster } from "@/components/ui/sonner"
 import "./global.css";
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routes";
@@ -50,6 +50,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
     <WagmiProvider config={config}>
       <QueryClientProvider client={queryClient}>
         <RouterProvider router={router} />
+        <Toaster />
       </QueryClientProvider>
     </WagmiProvider>
   </React.StrictMode>

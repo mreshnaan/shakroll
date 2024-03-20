@@ -1,7 +1,9 @@
+import { CrowdSale } from "./Crowdsale/Crowdsale";
+
 function Banner() {
   return (
     <div className='bg-[url("/assets/mobileBannerBg.png")] lg:bg-[url("/assets/bannerBg.png")] bg-center bg-no-repeat bg-cover h-fit w-full pt-[550px] grid grid-cols-1 mt-[-64px] xl:grid-cols-2 gap-14 xl:h-screen xl:py-0'>
-      <div className="flex items-center justify-center p-8">
+      <div className="flex items-center justify-center p-8 col-span-1">
         <div className="flex flex-col items-center justify-center xl:block w-[335px] xl:w-[468px]">
           <img
             src="/assets/logo.svg"
@@ -25,6 +27,10 @@ function Banner() {
             JOIN COMMUNITY
           </button>
         </div>
+      </div>
+
+      <div className="col-span-1  items-center justify-center px-2 py-4 hidden md:flex">
+        <CrowdSale/>
       </div>
     </div>
   );

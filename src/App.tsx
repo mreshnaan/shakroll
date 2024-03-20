@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import { CrowdSale } from "./components/Crowdsale/Crowdsale";
 const Header = lazy(() => import("./components/headers/Header"));
 const Banner = lazy(() => import("./components/Banner"));
 const Logobar = lazy(() => import("./components/Logobars"));
@@ -18,6 +19,7 @@ function App() {
         <div className="w-full min-h-screen">
           <Header />
           <Banner />
+          <div className="flex md:hidden w-full px-3 py-6"><CrowdSale/></div>
           <Logobar />
           <Section2 />
           <Section3 />
