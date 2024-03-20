@@ -18,7 +18,7 @@ import {
     TableHeader,
     TableRow,
   } from "@/components/ui/table"
-import { formatEther, parseEther } from "viem";
+
 
 
 
@@ -32,14 +32,9 @@ type Payment = {
     purchasedDate: string
   }
 
-  interface DataTableProps<TData, TValue> {
-    columns: ColumnDef<TData, TValue>[]
-    data: TData[]
-  }
-   
 
 
-export const columns: ColumnDef<Payment>[] = [
+ const columns: ColumnDef<Payment>[] = [
     {
       accessorKey: "id",
       header: "Id",

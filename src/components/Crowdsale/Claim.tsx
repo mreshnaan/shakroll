@@ -16,7 +16,7 @@ interface IProps {
   onClaimed?:() => void;
 }
 export function Claim(props: IProps) {
-  const { address, isConnected, chainId } = useAccount();
+  const { address, chainId } = useAccount();
   const [loading, setLoading] = useState(false);
   const { writeContractAsync } = useWriteContract();
   const [claimTx, setClaimTx] = useState<undefined | `0x${string}`>(undefined);
